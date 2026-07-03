@@ -1,5 +1,11 @@
 from lol.api import LoLAPI
+import os
+import sys
+sys.path.append(os.path.join(os.getcwd(),'src'))
 
+from common_utils import (
+    find_value
+)
 class Champion:
     def __init__(self):
         self.gold = 0
