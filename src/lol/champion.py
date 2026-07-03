@@ -21,7 +21,4 @@ class Champion:
             if self.current_health and self.max_health:
                 self.health_percentage = int((self.current_health/self.max_health) * 100)
                 return True
-            else:
-                return False
-        else:
-            return False
+        return False
