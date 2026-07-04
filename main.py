@@ -28,10 +28,10 @@ async def main():
                 if new_health != old_health:
                     await lamp.set_health(champion.health_percentage)
 
-                await asyncio.sleep(0.5)
-            else:
-                await lamp.strip.exec.turn_off()
-                await asyncio.sleep(10)
+                await asyncio.sleep(0.5)  
+        else:
+            await lamp.strip.exec.turn_off()
+            await asyncio.sleep(10)
     await lamp.disconnect()
 
 
